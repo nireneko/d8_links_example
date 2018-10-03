@@ -1,0 +1,15 @@
+nireneko.neko:
+  path: '/nireneko'
+  defaults:
+    _controller: '\Drupal\nireneko\Controller\LinkController::view'
+    _title: 'Nireneko Link test'
+  requirements:
+    _permission: 'content view'
+
+nireneko.parameter:
+  path: '/nireneko/{node}'
+  defaults:
+    _controller: '\Drupal\nireneko\Controller\LinkController::parameter'
+    _title: 'Nireneko Link test with parameter'
+  requirements:
+    _permission: 'content view'

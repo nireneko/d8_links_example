@@ -1,0 +1,6 @@
+name: "Nireneko"
+package: "Nireneko"
+type: "module"
+description: "Modulo de ejemplo para la creacion de links de diferentes maneras"
+core: 8.x
+version: 1.0

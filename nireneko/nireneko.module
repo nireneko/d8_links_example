@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function nireneko_theme($existing, $type, $theme, $path) {
+  return [
+    'nireneko_links' => [
+      'variables' => [
+        'links' => '',
+      ],
+    ],
+  ];
+}
