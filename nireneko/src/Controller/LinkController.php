@@ -52,7 +52,7 @@ class LinkController extends ControllerBase {
 
     //Cargamos el nodo 1
     /** @var \Drupal\node\NodeInterface $node */
-    $node = $this->entityTypeManager->getStorage('node')->load(1);
+    $node = current($this->entityTypeManager->getStorage('node')->loadMultiple());
 
     //Crear un link a una entidad, el metodo ->toUrl() devuelve un objeto Url
     $link_entidad = Link::fromTextAndUrl('Link entidad', $node->toUrl());
